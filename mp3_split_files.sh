@@ -18,7 +18,7 @@ do
     text=`echo $line | cut -d= -f4`
 
 
-    ffmpeg -ss $start_time -t $length -i ${input_track} -acodec copy ${output_tracks}/${track_padded}.mp3
+    avconv -ss $start_time -t $length -i ${input_track} -acodec copy ${output_tracks}/${track_padded}.mp3
 
 
     
