@@ -7,10 +7,10 @@ import codecs
 
 JOINED_PARAGRAPH_MAX_SIZE = 350
 SPLIT_AFTER_LENGTH = 400
-
+FONT_NAME="WenQuanYi Micro Hei Mono"
 
 window = pyglet.window.Window()
-label = pyglet.text.Label("", font_name='WenQuanYi Micro Hei Mono', anchor_y='bottom', width=window.width, multiline=True)
+label = pyglet.text.Label("", font_name=FONT_NAME, anchor_y='bottom', width=window.width, multiline=True)
 audio = pyglet.resource.media('input.mp3')
 player = pyglet.media.Player()
 player.queue(audio)
